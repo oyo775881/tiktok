@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeRelativeLayout"
+    style="@style/Layout.Main">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/homeRecommendViewPager"
+        style="@style/Layout.Main"
+        android:layout_below="@+id/homeTopView"
+        android:orientation="vertical" />
+
+    <View
+        android:id="@+id/homeTopView"
+        style="@style/View.Line"
+        android:layout_height="0dp"
+        android:background="@color/primaryDark" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/homeLiveImageView"
+        style="@style/ImageView.Wrap"
+        android:layout_below="@+id/homeTopView"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="@dimen/dp8"
+        android:src="@mipmap/ic_home_live" />
+
+    <RelativeLayout
+        style="@style/Layout.Wrap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeTopView"
+        android:layout_centerHorizontal="true">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/homeFollowTextView"
+            style="@style/TextView.Normal"
+            android:layout_height="44dp"
+            android:paddingStart="@dimen/dp16"
+            android:paddingEnd="@dimen/dp16"
+            android:text="关注"
+            android:textColor="@color/textThr"
+            android:textSize="@dimen/textMaxx"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/homeRecommendTextView"
+            style="@style/TextView.Normal"
+            android:layout_height="44dp"
+            android:layout_toEndOf="@+id/homeFollowTextView"
+            android:paddingStart="@dimen/dp16"
+            android:paddingEnd="@dimen/dp16"
+            android:text="推荐"
+            android:textSize="@dimen/textMaxx"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <View
+            style="@style/View.Line"
+            android:layout_height="@dimen/dp2"
+            android:layout_below="@+id/homeRecommendTextView"
+            android:layout_alignStart="@id/homeRecommendTextView"
+            android:layout_alignEnd="@id/homeRecommendTextView"
+            android:layout_marginStart="@dimen/dp24"
+            android:layout_marginTop="-4dp"
+            android:layout_marginEnd="@dimen/dp24"
+            android:background="@color/text" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/homeDotImageView"
+            style="@style/ImageView.Wrap"
+            android:layout_height="12dp"
+            android:layout_alignEnd="@+id/homeFollowTextView"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginEnd="-4dp"
+            android:scaleType="center"
+            android:src="@mipmap/ic_home_live1"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/homeDotTextView"
+            style="@style/TextView.Navigation.Dot"
+            android:layout_width="@dimen/dp8"
+            android:layout_height="@dimen/dp8"
+            android:layout_alignEnd="@+id/homeFollowTextView"
+            android:layout_marginEnd="@dimen/dp4" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/homeSearchImageView"
+        style="@style/ImageView.Wrap"
+        android:layout_below="@+id/homeTopView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="14dp"
+        android:scaleType="center"
+        android:src="@mipmap/ic_home_search" />
+
+    <top.yokey.douyin.view.LoadingView
+        android:id="@+id/homeLoadView"
+        style="@style/Layout.Main" />
+
+</RelativeLayout>

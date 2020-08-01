@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="accent">#F7CF1F</color>
+    <color name="accentDark">#D5AD0D</color>
+    <color name="primary">#161922</color>
+    <color name="primaryDark">#000000</color>
+
+    <color name="text">#FFFFFF</color>
+    <color name="textSub">#EFEFEF</color>
+    <color name="textTwo">#CCCCCC</color>
+    <color name="textThr">#999999</color>
+
+    <color name="textComment">#4F5257</color>
+    <color name="lineComment">#E4E4E4</color>
+
+    <color name="divider">#313540</color>
+    <color name="transparent">@android:color/transparent</color>
+
+</resources>

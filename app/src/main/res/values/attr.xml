@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <declare-styleable name="LoadingView">
+        <attr name="radius1" format="dimension" />
+        <attr name="radius2" format="dimension" />
+        <attr name="rtlScale" format="float" />
+        <attr name="ltrScale" format="float" />
+        <attr name="color1" format="color" />
+        <attr name="color2" format="color" />
+        <attr name="mixColor" format="color" />
+        <attr name="duration" format="integer" />
+        <attr name="pauseDuration" format="integer" />
+        <attr name="gap" format="dimension" />
+        <attr name="scaleStartFraction" format="float" />
+        <attr name="scaleEndFraction" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleMusicView">
+        <attr name="circle_music_view_progress_width" format="dimension" />
+        <attr name="circle_music_view_progress_slot_color" format="color" />
+        <attr name="circle_music_view_progress_buffer_color" format="color" />
+        <attr name="circle_music_view_progress_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MusicalNoteLayout">
+        <attr name="circle_music_view_res" format="reference" />
+        <attr name="circle_music_view_size" format="dimension" />
+    </declare-styleable>
+
+</resources>

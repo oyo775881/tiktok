@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Main">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/mainViewPager"
+        style="@style/Layout.Main"
+        android:layout_above="@+id/bottomRelativeLayout"
+        android:layout_below="@id/topView"
+        android:orientation="vertical" />
+
+    <View
+        android:id="@+id/topView"
+        style="@style/View.Line"
+        android:layout_height="0dp"
+        android:background="@color/primaryDark" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backImageView"
+        style="@style/ImageView.Wrap"
+        android:layout_width="@dimen/dp48"
+        android:layout_height="@dimen/dp48"
+        android:layout_below="@+id/topView"
+        android:layout_marginStart="@dimen/dp2"
+        android:scaleType="center"
+        android:src="@mipmap/ic_play_back" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/searchImageView"
+        style="@style/ImageView.Wrap"
+        android:layout_width="@dimen/dp48"
+        android:layout_height="@dimen/dp48"
+        android:layout_below="@+id/topView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dp2"
+        android:scaleType="center"
+        android:src="@mipmap/ic_play_search" />
+
+    <RelativeLayout
+        android:id="@+id/bottomRelativeLayout"
+        style="@style/Layout.Wrap"
+        android:layout_height="@dimen/dp48"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primaryDark">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/moreImageView"
+            style="@style/ImageView.Wrap"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="@dimen/dp48"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp2"
+            android:scaleType="center"
+            android:src="@mipmap/ic_play_more" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

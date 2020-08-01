@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--suppress ALL -->
+
+<resources>
+
+    <dimen name="dp0">0dp</dimen>
+    <dimen name="dp1">1dp</dimen>
+    <dimen name="dp2">2dp</dimen>
+    <dimen name="dp4">4dp</dimen>
+    <dimen name="dp8">8dp</dimen>
+    <dimen name="dp12">12dp</dimen>
+    <dimen name="dp16">16dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp24">24dp</dimen>
+    <dimen name="dp28">28dp</dimen>
+    <dimen name="dp32">32dp</dimen>
+    <dimen name="dp36">36dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+    <dimen name="dp44">44dp</dimen>
+    <dimen name="dp48">48dp</dimen>
+    <dimen name="dp52">52dp</dimen>
+    <dimen name="dp56">56dp</dimen>
+    <dimen name="dp60">60dp</dimen>
+    <dimen name="dp64">64dp</dimen>
+    <dimen name="dp68">68dp</dimen>
+    <dimen name="dp72">72dp</dimen>
+    <dimen name="dp76">76dp</dimen>
+    <dimen name="dp80">80dp</dimen>
+    <dimen name="dp88">88dp</dimen>
+    <dimen name="dp96">96dp</dimen>
+    <dimen name="dp104">104dp</dimen>
+    <dimen name="dp112">112dp</dimen>
+    <dimen name="dp120">120dp</dimen>
+    <dimen name="divider">1px</dimen>
+    <dimen name="toolbar">50dp</dimen>
+    <dimen name="textMax">16sp</dimen>
+    <dimen name="textMaxx">18sp</dimen>
+    <dimen name="textMaxXx">20sp</dimen>
+    <dimen name="textSmall">12sp</dimen>
+    <dimen name="textSmalls">10sp</dimen>
+    <dimen name="textNormal">14sp</dimen>
+
+</resources>

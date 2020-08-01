@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Wrap"
+    android:layout_width="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mainTextView"
+        style="@style/TextView.Button.Mini"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="@dimen/dp4"
+        android:background="@drawable/border_mine_mix"
+        android:drawableStart="@mipmap/ic_mine_aweme_mix"
+        android:drawableEnd="@mipmap/ic_mine_star_arrow"
+        android:drawablePadding="@dimen/dp4"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp12"
+        android:paddingEnd="@dimen/dp12"
+        android:textColor="@color/textTwo"
+        android:textSize="13sp" />
+
+</RelativeLayout>

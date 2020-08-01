@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Main"
+    android:background="@color/primaryDark"
+    tools:ignore="Overdraw">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logoImageView"
+        style="@style/ImageView.Wrap"
+        android:layout_above="@+id/lineView"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_load" />
+
+    <View
+        android:id="@+id/lineView"
+        style="@style/Layout.Wrap"
+        android:layout_width="1px"
+        android:layout_height="1px"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

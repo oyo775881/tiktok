@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nearbyRelativeLayout"
+    style="@style/Layout.Main">
+
+    <View
+        android:id="@+id/nearbyTopView"
+        style="@style/View.Line"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nearbyTitleTextView"
+        style="@style/TextView.Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp48"
+        android:layout_below="@+id/nearbyTopView"
+        android:layout_centerHorizontal="true"
+        android:drawableEnd="@mipmap/ic_nearby_arrow"
+        android:drawablePadding="@dimen/dp4"
+        android:gravity="center"
+        android:textSize="@dimen/textMax"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/nearbyRecyclerView"
+        style="@style/Layout.Main"
+        android:layout_below="@+id/nearbyTitleTextView" />
+
+    <top.yokey.douyin.view.LoadingView
+        android:id="@+id/nearbyLoadView"
+        style="@style/Layout.Main" />
+
+</RelativeLayout>

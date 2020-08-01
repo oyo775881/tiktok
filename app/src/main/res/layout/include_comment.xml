@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/commentRelativeLayout"
+    style="@style/Layout.Main"
+    android:background="@drawable/border_home_comment"
+    android:visibility="gone">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/commentNumberTextView"
+        style="@style/TextView.Normal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/textSmall"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        style="@style/ImageView.Wrap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/dp16"
+        android:scaleType="center"
+        android:src="@mipmap/ic_comment_close" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commentRecyclerView"
+        style="@style/Layout.Main"
+        android:layout_above="@+id/commentView"
+        android:layout_below="@+id/commentNumberTextView" />
+
+    <View
+        android:id="@+id/commentView"
+        style="@style/View.Line"
+        android:layout_above="@+id/commentLinearLayout"
+        android:background="@color/textSub" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/commentLinearLayout"
+        style="@style/Layout.Horizontal"
+        android:layout_height="@dimen/dp48"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/EditText.Normal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="留下你的精彩评论吧"
+            android:paddingStart="@dimen/dp16"
+            android:paddingEnd="@dimen/dp16"
+            android:textColorHint="@color/textThr"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            style="@style/ImageView.Wrap"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/ic_comment_at" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            style="@style/ImageView.Wrap"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/ic_comment_face" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

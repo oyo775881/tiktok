@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="TabTextSize">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/textMax</item>
+    </style>
+
+    <!-- Anim -->
+
+    <style name="Anim.Main" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <!-- Theme -->
+
+    <style name="Theme.Main" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:statusBarColor">@color/primaryDark</item>
+        <item name="android:colorPrimaryDark">@color/primaryDark</item>
+        <item name="android:textColorPrimary">@color/text</item>
+        <item name="android:navigationBarColor">@color/primaryDark</item>
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="android:windowAnimationStyle">@style/Anim.Main</item>
+        <item name="android:colorBackgroundCacheHint">@color/primary</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="Theme.Tran" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/primaryDark</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!-- View -->
+
+    <style name="View">
+        <item name="android:background">@color/divider</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="View.Line" parent="View">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider</item>
+    </style>
+
+    <!-- Layout -->
+
+    <style name="Layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout.Tab" parent="Layout">
+        <item name="android:layout_height">@dimen/dp40</item>
+    </style>
+
+    <style name="Layout.Main" parent="Layout">
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Layout.Wrap" parent="Layout">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout.Horizontal" parent="Layout">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- TextView -->
+
+    <style name="TextView">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textNormal</item>
+    </style>
+
+    <style name="TextView.Normal" parent="TextView">
+        <item name="android:textSize">@dimen/textNormal</item>
+    </style>
+
+    <style name="TextView.Button" parent="TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:layout_height">@dimen/dp48</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/textMax</item>
+        <item name="android:background">@drawable/selector_accent_8dp</item>
+    </style>
+
+    <style name="TextView.Button.Mini" parent="TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:layout_height">@dimen/dp40</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/textMax</item>
+        <item name="android:background">@drawable/selector_accent_8dp</item>
+    </style>
+
+    <style name="TextView.Navigation" parent="TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/dp8</item>
+        <item name="android:textColor">@color/textThr</item>
+        <item name="android:paddingBottom">@dimen/dp4</item>
+        <item name="android:textSize">@dimen/textMax</item>
+        <item name="android:drawablePadding">@dimen/dp1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="TextView.Navigation.Dot" parent="TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_marginStart">-6dp</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:layout_width">@dimen/dp16</item>
+        <item name="android:layout_height">@dimen/dp16</item>
+        <item name="android:textSize">@dimen/textSmalls</item>
+        <item name="android:background">@drawable/selector_accent_8dp</item>
+    </style>
+
+    <!-- EditText -->
+
+    <style name="EditText">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:inputType">text</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:drawablePadding">@dimen/dp4</item>
+        <item name="android:textSize">@dimen/textNormal</item>
+        <item name="paddingStart">@dimen/dp8</item>
+        <item name="paddingEnd">@dimen/dp8</item>
+    </style>
+
+    <style name="EditText.Normal" parent="EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- ImageView -->
+
+    <style name="ImageView">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ImageView.Main" parent="ImageView">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ImageView.Wrap" parent="ImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

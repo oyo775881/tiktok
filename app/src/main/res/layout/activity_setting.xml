@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLinearLayout"
+    style="@style/Layout.Main">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/mainScrollView"
+        style="@style/Layout.Main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/scrollLinearLayout"
+            style="@style/Layout.Main">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextView.Normal"
+                android:text="位置信息（选填，首页底部导航栏）"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/navNearbyEditText"
+                style="@style/EditText.Normal"
+                android:layout_width="match_parent"
+                android:text="西乡塘"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextView.Normal"
+                android:text="消息数量（必填，首页底部导航栏）"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/navMsgEditText"
+                style="@style/EditText.Normal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp8"
+                android:text="99"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextView.Normal"
+                android:layout_marginTop="@dimen/dp8"
+                android:text="关注图标（可选，不填不显示，0显示live，1显示黄点）"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/homeFollowEditText"
+                style="@style/EditText.Normal"
+                android:layout_width="match_parent"
+                android:text="0"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextView.Normal"
+                android:layout_marginTop="@dimen/dp8"
+                android:text="分享链接（必填，用于展示 我 页面数据）"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/userLinkEditText"
+                style="@style/EditText.Normal"
+                android:layout_width="match_parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextView.Normal"
+                android:layout_marginTop="@dimen/dp8"
+                android:text="资料完成度（必填，接口不返回，0为不显示）"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/userRateEditText"
+                style="@style/EditText.Normal"
+                android:layout_width="match_parent"
+                android:text="52%"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextView.Normal"
+                android:layout_marginTop="@dimen/dp8"
+                android:text="好友数量（必填，接口不返回，显示好友的数量，为空不显示）"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/userFriendEditText"
+                style="@style/EditText.Normal"
+                android:layout_width="match_parent"
+                android:text="52"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextView.Normal"
+                android:layout_marginTop="@dimen/dp8"
+                android:text="播放基数（可选，默认1，播放量X的基数）"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/userBaseEditText"
+                style="@style/EditText.Normal"
+                android:layout_width="match_parent"
+                android:text="1"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/confirmTextView"
+        style="@style/TextView.Button"
+        android:background="@drawable/selector_accent"
+        android:text="确认"
+        tools:ignore="HardcodedText" />
+
+    <WebView
+        android:id="@+id/mainWebView"
+        style="@style/Layout.Main"
+        android:visibility="gone" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainDrawerLayout"
+    style="@style/Layout.Main">
+
+    <RelativeLayout
+        android:id="@+id/mainLinearLayout"
+        style="@style/Layout.Main">
+
+        <include
+            style="@style/Layout.Main"
+            layout="@layout/include_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp56" />
+
+        <include
+            style="@style/Layout.Main"
+            layout="@layout/include_nearby"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp56" />
+
+        <include
+            style="@style/Layout.Main"
+            layout="@layout/include_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp56" />
+
+        <include
+            style="@style/Layout.Main"
+            layout="@layout/include_mine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp56" />
+
+        <include
+            style="@style/Layout.Main"
+            layout="@layout/include_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp56"
+            android:layout_alignParentBottom="true" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/commentTextView"
+            style="@style/Layout.Main"
+            android:background="@color/transparent" />
+
+        <include
+            style="@style/Layout.Main"
+            layout="@layout/include_comment"
+            android:layout_width="match_parent"
+            android:layout_height="540dp"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/include_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuLinearLayout"
+    style="@style/Layout.Main"
+    android:layout_width="248dp"
+    android:layout_gravity="end"
+    android:background="@color/primary">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/menuOrderTextView"
+        style="@style/TextView.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:drawableStart="@mipmap/ic_menu_order"
+        android:drawablePadding="@dimen/dp12"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:text="我的订单"
+        android:textColor="#EFEFEF"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextView.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:drawableStart="@mipmap/ic_menu_wallet"
+        android:drawablePadding="@dimen/dp12"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:text="钱包"
+        android:textColor="#EFEFEF"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextView.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:drawableStart="@mipmap/ic_menu_qrcode"
+        android:drawablePadding="@dimen/dp12"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:text="我的二维码"
+        android:textColor="#EFEFEF"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextView.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:drawableStart="@mipmap/ic_menu_fav"
+        android:drawablePadding="@dimen/dp12"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:text="我的收藏"
+        android:textColor="#EFEFEF"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextView.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:drawableStart="@mipmap/ic_menu_product"
+        android:drawablePadding="@dimen/dp12"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:text="私密作品"
+        android:textColor="#EFEFEF"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextView.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:drawableStart="@mipmap/ic_menu_mini"
+        android:drawablePadding="@dimen/dp12"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:text="小程序"
+        android:textColor="#EFEFEF"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextView.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:drawableStart="@mipmap/ic_menu_author"
+        android:drawablePadding="@dimen/dp12"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:text="创作者服务中心"
+        android:textColor="#EFEFEF"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextView.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:drawableStart="@mipmap/ic_menu_youth"
+        android:drawablePadding="@dimen/dp12"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:text="未成年保护工具"
+        android:textColor="#EFEFEF"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/menuSettingTextView"
+        style="@style/TextView.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:drawableStart="@mipmap/ic_menu_setting"
+        android:drawablePadding="@dimen/dp12"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:text="设置"
+        android:textColor="#EFEFEF"
+        tools:ignore="HardcodedText" />
+
+    <View
+        style="@style/Layout.Main"
+        android:layout_weight="1" />
+
+    <View
+        style="@style/View.Line"
+        android:layout_marginStart="@dimen/dp24"
+        android:layout_marginEnd="@dimen/dp24" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextView.Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_gravity="center"
+        android:drawableStart="@mipmap/ic_menu_more"
+        android:drawablePadding="@dimen/dp12"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:text="更多功能"
+        android:textColor="#EFEFEF"
+        tools:ignore="HardcodedText" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

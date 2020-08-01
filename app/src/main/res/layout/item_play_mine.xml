@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Main">
+
+    <com.dueeeke.videoplayer.player.VideoView
+        android:id="@+id/mainVideoView"
+        style="@style/Layout.Main" />
+
+    <top.yokey.douyin.view.LoadingView
+        android:id="@+id/mainLoadView"
+        style="@style/Layout.Wrap"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/musicImageView"
+        style="@style/ImageView.Wrap"
+        android:layout_width="@dimen/dp48"
+        android:layout_height="@dimen/dp48"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="@dimen/dp12"
+        android:background="@mipmap/bg_home_music"
+        android:padding="@dimen/dp8"
+        android:src="@mipmap/ic_launcher" />
+
+    <RelativeLayout
+        style="@style/Layout.Wrap"
+        android:layout_width="wrap_content"
+        android:layout_alignTop="@+id/musicImageView"
+        android:layout_alignBottom="@+id/musicImageView"
+        android:layout_marginStart="@dimen/dp12"
+        android:background="@drawable/border_play_info"
+        android:paddingStart="@dimen/dp4"
+        android:paddingEnd="@dimen/dp16">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/avatarImageView"
+            style="@style/ImageView.Wrap"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp8" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nicknameTextView"
+            style="@style/TextView.Normal"
+            android:layout_alignTop="@+id/avatarImageView"
+            android:layout_toEndOf="@+id/avatarImageView"
+            android:textColor="@color/textTwo"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextView.Normal"
+            android:layout_below="@+id/nicknameTextView"
+            android:layout_toEndOf="@+id/avatarImageView"
+            android:text="发布了作品"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

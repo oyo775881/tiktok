@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationLinearLayout"
+    style="@style/Layout.Horizontal"
+    android:layout_height="@dimen/dp56"
+    android:background="@color/primaryDark">
+
+    <RelativeLayout
+        style="@style/Layout.Main"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/homeTextView"
+            style="@style/TextView.Navigation"
+            android:text="首页"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/Layout.Main"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nearbyTextView"
+            style="@style/TextView.Navigation"
+            android:text="海城"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/addImageView"
+        style="@style/TextView.Navigation"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:scaleType="center"
+        android:src="@mipmap/ic_navigation_add" />
+
+    <RelativeLayout
+        style="@style/Layout.Main"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/messageTextView"
+            style="@style/TextView.Navigation"
+            android:text="消息"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/messageDotTextView"
+            style="@style/TextView.Navigation.Dot"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@+id/messageTextView"
+            android:minWidth="@dimen/dp16"
+            android:paddingStart="@dimen/dp4"
+            android:paddingEnd="@dimen/dp4"
+            android:visibility="visible"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/Layout.Main"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mineTextView"
+            style="@style/TextView.Navigation"
+            android:text="    我    "
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/messageRelativeLayout"
+    style="@style/Layout.Main">
+
+    <View
+        android:id="@+id/messageTopView"
+        style="@style/View.Line"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/messageTitleTextView"
+        style="@style/TextView.Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp48"
+        android:layout_below="@+id/messageTopView"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="@dimen/dp4"
+        android:gravity="center"
+        android:text="消息"
+        android:textSize="@dimen/textMax"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextView.Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp48"
+        android:layout_below="@+id/messageTopView"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="@dimen/dp4"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:text="创建群聊"
+        android:textColor="@color/textThr"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/messageLineView"
+        style="@style/View.Line"
+        android:layout_below="@+id/messageTitleTextView" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/messageScrollView"
+        style="@style/Layout.Main"
+        android:layout_below="@+id/messageLineView">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/Layout.Main"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/messageTopLinearLayout"
+                style="@style/Layout.Horizontal"
+                android:layout_below="@+id/messageLineView"
+                android:layout_marginTop="@dimen/dp12">
+
+                <RelativeLayout
+                    style="@style/Layout.Wrap"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/messageFansTextView"
+                        style="@style/TextView.Navigation"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/ic_message_fans"
+                        android:drawablePadding="@dimen/dp8"
+                        android:paddingTop="@dimen/dp12"
+                        android:paddingBottom="@dimen/dp12"
+                        android:text="粉丝"
+                        android:textColor="@color/text"
+                        tools:ignore="HardcodedText" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/messageFansDotTextView"
+                        style="@style/TextView.Navigation.Dot"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:layout_toEndOf="@+id/messageFansTextView"
+                        android:minWidth="@dimen/dp16"
+                        android:paddingStart="@dimen/dp4"
+                        android:paddingEnd="@dimen/dp4"
+                        android:text="99+"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/Layout.Wrap"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/messageLikeTextView"
+                        style="@style/TextView.Navigation"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/ic_message_like"
+                        android:drawablePadding="@dimen/dp8"
+                        android:paddingTop="@dimen/dp12"
+                        android:paddingBottom="@dimen/dp12"
+                        android:text="赞"
+                        android:textColor="@color/text"
+                        tools:ignore="HardcodedText" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/messageLikeDotTextView"
+                        style="@style/TextView.Navigation.Dot"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:layout_toEndOf="@+id/messageLikeTextView"
+                        android:minWidth="@dimen/dp16"
+                        android:paddingStart="@dimen/dp4"
+                        android:paddingEnd="@dimen/dp4"
+                        android:text="99+"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/Layout.Wrap"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/messageAtTextView"
+                        style="@style/TextView.Navigation"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/ic_message_at"
+                        android:drawablePadding="@dimen/dp8"
+                        android:paddingTop="@dimen/dp12"
+                        android:paddingBottom="@dimen/dp12"
+                        android:text="\@我的"
+                        android:textColor="@color/text"
+                        tools:ignore="HardcodedText" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/messageAtDotTextView"
+                        style="@style/TextView.Navigation.Dot"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:layout_toEndOf="@+id/messageAtTextView"
+                        android:minWidth="@dimen/dp16"
+                        android:paddingStart="@dimen/dp4"
+                        android:paddingEnd="@dimen/dp4"
+                        android:text="99+"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/Layout.Wrap"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/messageCommentTextView"
+                        style="@style/TextView.Navigation"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/ic_message_comment"
+                        android:drawablePadding="@dimen/dp8"
+                        android:paddingTop="@dimen/dp12"
+                        android:paddingBottom="@dimen/dp12"
+                        android:text="评论"
+                        android:textColor="@color/text"
+                        tools:ignore="HardcodedText" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/messageCommentDotTextView"
+                        style="@style/TextView.Navigation.Dot"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:layout_toEndOf="@+id/messageCommentTextView"
+                        android:minWidth="@dimen/dp16"
+                        android:paddingStart="@dimen/dp4"
+                        android:paddingEnd="@dimen/dp4"
+                        android:text="99+"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/Layout.Main"
+                android:scaleType="fitStart"
+                android:src="@mipmap/bg_message" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <top.yokey.douyin.view.LoadingView
+        android:id="@+id/messageLoadView"
+        style="@style/Layout.Main"
+        android:visibility="gone" />
+
+</RelativeLayout>

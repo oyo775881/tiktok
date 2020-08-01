@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainScrollView"
+    style="@style/Layout.Main">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/mainLinearLayout"
+        style="@style/Layout.Main">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/awemeMixRecyclerView"
+            style="@style/Layout.Main"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp16" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/awemeRecyclerView"
+            style="@style/Layout.Main" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

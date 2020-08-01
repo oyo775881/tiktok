@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Main">
+
+    <com.dueeeke.videoplayer.player.VideoView
+        android:id="@+id/mainVideoView"
+        style="@style/Layout.Main" />
+
+    <top.yokey.douyin.view.LoadingView
+        android:id="@+id/mainLoadView"
+        style="@style/Layout.Wrap"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <top.yokey.douyin.view.LikeLayout
+        android:id="@+id/mainMyLikeLayout"
+        style="@style/Layout.Main"
+        android:layout_above="@+id/avatarImageView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/avatarImageView"
+        style="@style/ImageView.Wrap"
+        android:layout_width="@dimen/dp48"
+        android:layout_height="@dimen/dp48"
+        android:layout_above="@+id/likeTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="@dimen/dp32"
+        android:background="@drawable/border_home_avatar"
+        android:padding="@dimen/dp1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/addImageView"
+        style="@style/ImageView.Wrap"
+        android:layout_width="24dp"
+        android:layout_alignStart="@+id/avatarImageView"
+        android:layout_alignEnd="@+id/avatarImageView"
+        android:layout_alignBottom="@+id/avatarImageView"
+        android:layout_marginBottom="-8dp"
+        android:scaleType="center"
+        android:src="@mipmap/ic_home_add" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/likeTextView"
+        style="@style/TextView.Normal"
+        android:layout_above="@+id/commentTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="@dimen/dp16"
+        android:drawableTop="@mipmap/ic_home_like"
+        android:gravity="center"
+        android:textColor="@color/textTwo"
+        android:textSize="@dimen/textSmall" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/commentTextView"
+        style="@style/TextView.Normal"
+        android:layout_above="@+id/forwardTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="@dimen/dp16"
+        android:drawableTop="@mipmap/ic_home_comment"
+        android:gravity="center"
+        android:textColor="@color/textTwo"
+        android:textSize="@dimen/textSmall" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/forwardTextView"
+        style="@style/TextView.Normal"
+        android:layout_above="@+id/musicImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="46dp"
+        android:drawableTop="@mipmap/ic_home_forward"
+        android:gravity="center"
+        android:textColor="@color/textTwo"
+        android:textSize="@dimen/textSmall" />
+
+    <RelativeLayout
+        android:id="@+id/infoRelativeLayout"
+        style="@style/Layout.Wrap"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border_aweme_mix">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mixTextView"
+            style="@style/TextView.Normal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:drawableStart="@mipmap/ic_mine_aweme_mix"
+            android:drawableEnd="@mipmap/ic_mine_star_arrow"
+            android:drawablePadding="@dimen/dp8"
+            android:paddingStart="@dimen/dp12"
+            android:paddingEnd="@dimen/dp12"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <top.yokey.douyin.view.MusicalNoteLayout
+        android:id="@+id/mainMusicalNoteLayout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/infoRelativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/dp16" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/musicImageView"
+        style="@style/ImageView.Wrap"
+        android:layout_width="@dimen/dp48"
+        android:layout_height="@dimen/dp48"
+        android:layout_above="@+id/infoRelativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="@dimen/dp12"
+        android:background="@mipmap/bg_home_music"
+        android:padding="@dimen/dp8"
+        android:src="@mipmap/ic_launcher" />
+
+    <cc.ibooker.ztextviewlib.MarqueeTextView
+        android:id="@+id/musicMarqueeTextView"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/musicImageView"
+        android:drawableStart="@mipmap/ic_home_douyin"
+        android:drawablePadding="@dimen/dp4"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:singleLine="true"
+        android:textColor="@color/text" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/descTextView"
+        style="@style/TextView.Normal"
+        android:layout_above="@+id/musicMarqueeTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/dp8"
+        android:layout_toStartOf="@+id/mainMusicalNoteLayout"
+        android:lineSpacingExtra="4dp"
+        android:maxLines="255"
+        android:paddingStart="@dimen/dp8"
+        android:paddingEnd="@dimen/dp8"
+        android:textColor="@color/textSub" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/authorTextView"
+        style="@style/TextView.Normal"
+        android:layout_above="@+id/descTextView"
+        android:layout_marginBottom="@dimen/dp8"
+        android:paddingStart="@dimen/dp8"
+        android:paddingEnd="@dimen/dp8"
+        android:textColor="@color/text"
+        android:textSize="@dimen/textMax"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/timeTextView"
+        style="@style/TextView.Normal"
+        android:layout_alignTop="@+id/authorTextView"
+        android:layout_alignBottom="@id/authorTextView"
+        android:layout_toEndOf="@+id/authorTextView"
+        android:textColor="@color/textThr" />
+
+    <RelativeLayout
+        android:id="@+id/locationRelativeLayout"
+        style="@style/Layout.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/authorTextView"
+        android:layout_marginStart="@dimen/dp8"
+        android:background="@drawable/border_nearby_location"
+        android:paddingStart="@dimen/dp4"
+        android:paddingEnd="@dimen/dp4"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/locationImageView"
+            style="@style/ImageView.Wrap"
+            android:layout_marginTop="@dimen/dp4"
+            android:layout_marginBottom="@dimen/dp4"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_nearby_location1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/locationTextView"
+            style="@style/TextView.Normal"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp4"
+            android:layout_toEndOf="@+id/locationImageView"
+            android:textColor="@color/text"
+            android:textSize="@dimen/textSmall" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/locationDTextView"
+            style="@style/TextView.Normal"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/locationTextView"
+            android:textColor="@color/textThr"
+            android:textSize="@dimen/textSmall" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/jyRelativeLayout"
+        style="@style/Layout.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/authorTextView"
+        android:layout_marginStart="@dimen/dp8"
+        android:background="@drawable/border_nearby_location"
+        android:paddingStart="@dimen/dp4"
+        android:paddingEnd="@dimen/dp4"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/jyImageView"
+            style="@style/ImageView.Wrap"
+            android:layout_marginTop="@dimen/dp4"
+            android:layout_marginBottom="@dimen/dp4"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_aweme_yj" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/jyTextView"
+            style="@style/TextView.Normal"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp4"
+            android:layout_toEndOf="@+id/jyImageView"
+            android:textColor="@color/text"
+            android:textSize="@dimen/textSmall" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/playImageView"
+        style="@style/ImageView.Wrap"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_video_play"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Wrap"
+    android:paddingStart="@dimen/dp16"
+    android:paddingTop="@dimen/dp12"
+    android:paddingEnd="@dimen/dp16"
+    android:paddingBottom="@dimen/dp12">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/mainImageView"
+        style="@style/ImageView.Wrap"
+        android:layout_width="@dimen/dp32"
+        android:layout_height="@dimen/dp32"
+        android:layout_marginTop="@dimen/dp1"
+        android:layout_marginEnd="@dimen/dp12" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/likeTextView"
+        style="@style/TextView.Normal"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/dp24"
+        android:drawableTop="@mipmap/ic_like_normal"
+        android:gravity="center"
+        android:textColor="@color/textThr" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nicknameTextView"
+        style="@style/TextView.Normal"
+        android:layout_toStartOf="@+id/likeTextView"
+        android:layout_toEndOf="@+id/mainImageView"
+        android:textColor="@color/textComment"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/contentTextView"
+        style="@style/TextView.Normal"
+        android:layout_below="@+id/nicknameTextView"
+        android:layout_marginTop="@dimen/dp4"
+        android:layout_marginBottom="@dimen/dp12"
+        android:layout_toStartOf="@+id/likeTextView"
+        android:layout_toEndOf="@+id/mainImageView"
+        android:maxLines="255"
+        android:textColor="@color/primary" />
+
+    <RelativeLayout
+        android:id="@+id/moreRelativeLayout"
+        style="@style/Layout.Wrap"
+        android:layout_below="@+id/contentTextView"
+        android:layout_toEndOf="@+id/mainImageView">
+
+        <View
+            style="@style/View.Line"
+            android:layout_width="20dp"
+            android:layout_height="@dimen/dp1"
+            android:layout_centerVertical="true"
+            android:background="@color/lineComment" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/moreTextView"
+            style="@style/TextView.Normal"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="28dp"
+            android:drawableEnd="@mipmap/ic_comment_down"
+            android:drawablePadding="@dimen/dp4"
+            android:textColor="@color/textThr"
+            android:textSize="@dimen/textSmall" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

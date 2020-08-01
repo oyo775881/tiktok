@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mineFrameLayout"
+    style="@style/Layout.Main">
+
+    <top.yokey.douyin.view.ScaleScrollView
+        android:id="@+id/mineScaleScrollView"
+        style="@style/Layout.Main">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/mineLinearLayout"
+            style="@style/Layout.Main">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/mineBannerImageView"
+                android:layout_width="match_parent"
+                android:layout_height="131dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bg_mine" />
+
+            <RelativeLayout
+                android:id="@+id/mineInfoRelativeLayout"
+                style="@style/Layout.Wrap"
+                android:layout_marginTop="-12dp"
+                android:paddingStart="@dimen/dp16"
+                android:paddingEnd="@dimen/dp16">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/mineAvatarImageView"
+                    style="@style/ImageView.Wrap"
+                    android:layout_width="@dimen/dp104"
+                    android:layout_height="@dimen/dp104"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/border_mine_avatar"
+                    android:padding="5dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mineEditTextView"
+                    style="@style/TextView.Button.Mini"
+                    android:layout_alignTop="@+id/mineAddTextView"
+                    android:layout_marginStart="@dimen/dp12"
+                    android:layout_marginEnd="@dimen/dp4"
+                    android:layout_toStartOf="@+id/mineAddTextView"
+                    android:layout_toEndOf="@+id/mineAvatarImageView"
+                    android:background="@drawable/border_mine_button"
+                    android:text="编辑资料"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/textMax"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mineAddTextView"
+                    style="@style/TextView.Button.Mini"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/dp28"
+                    android:background="@drawable/border_mine_button"
+                    android:drawableStart="@mipmap/ic_mine_add"
+                    android:drawablePadding="@dimen/dp1"
+                    android:paddingStart="@dimen/dp16"
+                    android:paddingEnd="@dimen/dp16"
+                    android:text="好友"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/textMax"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextView.Navigation.Dot"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_alignTop="@+id/mineAddTextView"
+                    android:layout_alignEnd="@+id/mineAddTextView"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:layout_marginEnd="6dp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mineNicknameTextView"
+                    style="@style/TextView.Normal"
+                    android:layout_below="@+id/mineAvatarImageView"
+                    android:layout_marginBottom="@dimen/dp4"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mineIdTextView"
+                    style="@style/TextView.Normal"
+                    android:layout_below="@id/mineNicknameTextView"
+                    android:layout_marginBottom="@dimen/dp12"
+                    android:drawablePadding="@dimen/dp8"
+                    android:textSize="@dimen/textSmall" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mineVerifyTextView"
+                    style="@style/TextView.Normal"
+                    android:layout_below="@id/mineIdTextView"
+                    android:layout_marginBottom="@dimen/dp12"
+                    android:drawablePadding="@dimen/dp8"
+                    android:textSize="@dimen/textSmall" />
+
+                <View
+                    android:id="@+id/mineLineView"
+                    style="@style/View.Line"
+                    android:layout_below="@+id/mineVerifyTextView"
+                    android:layout_marginBottom="@dimen/dp12" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mineShopTextView"
+                    style="@style/TextView.Normal"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/mineLineView"
+                    android:layout_marginBottom="@dimen/dp12"
+                    android:drawableStart="@mipmap/ic_mine_shop"
+                    android:drawableEnd="@mipmap/ic_mine_shop_arrow"
+                    android:drawablePadding="@dimen/dp8"
+                    android:text="商品橱窗"
+                    android:textColor="@color/accent"
+                    android:textSize="@dimen/textSmall"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:id="@+id/mineLine2View"
+                    style="@style/View.Line"
+                    android:layout_below="@+id/mineShopTextView"
+                    android:layout_marginBottom="@dimen/dp12" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mineSignTextView"
+                    style="@style/TextView.Normal"
+                    android:layout_below="@id/mineLine2View"
+                    android:layout_marginBottom="@dimen/dp12"
+                    android:lineSpacingExtra="@dimen/dp4"
+                    android:maxLines="255" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mineCallTextView"
+                    style="@style/TextView.Button.Mini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mineSignTextView"
+                    android:layout_marginBottom="@dimen/dp12"
+                    android:background="@drawable/border_mine_button"
+                    android:drawableStart="@mipmap/ic_mine_call"
+                    android:drawablePadding="@dimen/dp2"
+                    android:paddingStart="@dimen/dp4"
+                    android:paddingTop="@dimen/dp2"
+                    android:paddingEnd="@dimen/dp4"
+                    android:paddingBottom="@dimen/dp2"
+                    android:text="官方电话"
+                    android:textColor="@color/accent"
+                    android:textSize="@dimen/textSmall"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/mineInfoLinearLayout"
+                    style="@style/Layout.Horizontal"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_below="@+id/mineCallTextView"
+                    android:layout_marginBottom="@dimen/dp12">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/mineGenderTextView"
+                        style="@style/TextView.Button.Mini"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/dp4"
+                        android:background="@drawable/border_mine_info"
+                        android:drawableStart="@mipmap/ic_mine_boy"
+                        android:drawablePadding="@dimen/dp2"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textColor="@color/textThr"
+                        android:textSize="@dimen/textSmall" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/mineAreaTextView"
+                        style="@style/TextView.Button.Mini"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/dp4"
+                        android:background="@drawable/border_mine_info"
+                        android:drawablePadding="@dimen/dp2"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textColor="@color/textThr"
+                        android:textSize="@dimen/textSmall" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/mineSchoolTextView"
+                        style="@style/TextView.Button.Mini"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/dp4"
+                        android:background="@drawable/border_mine_info"
+                        android:drawablePadding="@dimen/dp2"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textColor="@color/textThr"
+                        android:textSize="@dimen/textSmall" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/mineTipsTextView"
+                        style="@style/TextView.Button.Mini"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/dp4"
+                        android:background="@drawable/border_mine_info"
+                        android:drawableStart="@mipmap/ic_mine_tips"
+                        android:drawablePadding="@dimen/dp2"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="增加地区、学校等标签"
+                        android:textColor="@color/textThr"
+                        android:textSize="@dimen/textSmall"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/mineDataLinearLayout"
+                    style="@style/Layout.Horizontal"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_below="@+id/mineInfoLinearLayout"
+                    android:layout_marginBottom="@dimen/dp16">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/mineLikeTextView"
+                        style="@style/TextView.Normal"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/textMax"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView.Normal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp12"
+                        android:text=" 获赞"
+                        android:textColor="@color/textThr"
+                        tools:ignore="HardcodedText" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/mineFollowTextView"
+                        style="@style/TextView.Normal"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/textMax"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView.Normal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp12"
+                        android:text=" 关注"
+                        android:textColor="@color/textThr"
+                        tools:ignore="HardcodedText" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/mineFansTextView"
+                        style="@style/TextView.Normal"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/textMax"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView.Normal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp12"
+                        android:text=" 粉丝"
+                        android:textColor="@color/textThr"
+                        tools:ignore="HardcodedText" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/mineFriendTextView"
+                        style="@style/TextView.Normal"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/textMax"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/mineFriend1TextView"
+                        style="@style/TextView.Normal"
+                        android:layout_height="wrap_content"
+                        android:text=" 好友"
+                        android:textColor="@color/textThr"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/mineStartLinearLayout"
+                    style="@style/Layout.Horizontal"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_below="@+id/mineDataLinearLayout"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:background="@drawable/border_mine_button">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/mineDouTextView"
+                        style="@style/TextView.Normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableEnd="@mipmap/ic_mine_star_arrow"
+                        android:drawablePadding="@dimen/dp8"
+                        android:paddingStart="@dimen/dp12"
+                        android:paddingEnd="@dimen/dp12"
+                        android:textColor="@color/textTwo" />
+
+                    <View
+                        style="@style/View.Line"
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp12"
+                        android:layout_marginBottom="@dimen/dp12"
+                        android:background="@color/textThr" />
+
+                    <RelativeLayout
+                        style="@style/Layout.Main"
+                        android:layout_weight="1"
+                        android:paddingStart="@dimen/dp12"
+                        android:paddingEnd="@dimen/dp12">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/mineDou1ImageView"
+                            style="@style/ImageView.Wrap"
+                            android:layout_width="@dimen/dp20"
+                            android:layout_height="@dimen/dp20"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="-4dp"
+                            android:layout_toEndOf="@+id/mineDou2ImageView"
+                            android:background="@drawable/border_mine_avatar"
+                            android:padding="@dimen/dp1"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/mineDou2ImageView"
+                            style="@style/ImageView.Wrap"
+                            android:layout_width="@dimen/dp20"
+                            android:layout_height="@dimen/dp20"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="-4dp"
+                            android:layout_toEndOf="@+id/mineDou3ImageView"
+                            android:background="@drawable/border_mine_avatar"
+                            android:padding="@dimen/dp1"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/mineDou3ImageView"
+                            style="@style/ImageView.Wrap"
+                            android:layout_width="@dimen/dp20"
+                            android:layout_height="@dimen/dp20"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/border_mine_avatar"
+                            android:padding="@dimen/dp1"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/mineBangTextView"
+                            style="@style/TextView.Normal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/dp8"
+                            android:layout_toEndOf="@+id/mineDou1ImageView"
+                            android:drawableEnd="@mipmap/ic_mine_star_arrow"
+                            android:drawablePadding="@dimen/dp8"
+                            android:textColor="@color/textTwo" />
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/mineOneTabLayout"
+                style="@style/Layout.Wrap" />
+
+            <View style="@style/View.Line" />
+
+            <top.yokey.douyin.view.FullViewPager
+                android:id="@+id/mineViewPager"
+                style="@style/Layout.Main" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </top.yokey.douyin.view.ScaleScrollView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/mineTopLinearLayout"
+        style="@style/Layout.Wrap">
+
+        <View
+            android:id="@+id/mineTopView"
+            style="@style/View.Line"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent" />
+
+        <RelativeLayout
+            android:id="@+id/mineTopRelativeLayout"
+            style="@style/Layout.Wrap">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mineNameTextView"
+                style="@style/TextView.Normal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:gravity="center"
+                android:textSize="@dimen/textMax"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/mineMoreImageView"
+                style="@style/ImageView.Wrap"
+                android:layout_width="@dimen/dp32"
+                android:layout_height="@dimen/dp32"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/dp16"
+                android:background="@drawable/border_action_more"
+                android:scaleType="center"
+                android:src="@mipmap/ic_action_more" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/mineTwoTabLayout"
+                style="@style/Layout.Wrap"
+                android:layout_below="@+id/mineNameTextView"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>

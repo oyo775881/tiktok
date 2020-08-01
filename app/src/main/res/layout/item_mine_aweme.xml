@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Wrap">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/mainImageView"
+        style="@style/ImageView.Wrap"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:background="#393a44" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/topImageView"
+        style="@style/ImageView.Wrap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp8"
+        android:src="@mipmap/ic_mine_top"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mainTextView"
+        style="@style/TextView.Normal"
+        android:layout_alignBottom="@+id/mainImageView"
+        android:drawableStart="@mipmap/ic_item_mine_play"
+        android:padding="@dimen/dp8" />
+
+</RelativeLayout>
